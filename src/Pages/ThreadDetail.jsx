@@ -116,13 +116,13 @@ const ThreadDetail = () => {
             >
               {data?.comments?.map((item) => (
                 <ItemThreadComment
-                  key={item.id}
-                  avatar={item.owner.avatar}
-                  name={item.owner.name}
-                  time={item.createdAt}
-                  body={item.content}
-                  like={item.upVotesBy.length}
-                  unlike={item.downVotesBy.length}
+                  key={item?.id}
+                  avatar={item?.owner?.avatar}
+                  name={item?.owner?.name}
+                  time={item?.createdAt}
+                  body={item?.content}
+                  like={item?.upVotesBy?.length}
+                  unlike={item?.downVotesBy?.length}
                 />
               ))}
             </div>
