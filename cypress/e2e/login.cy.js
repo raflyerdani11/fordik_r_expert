@@ -16,7 +16,7 @@ describe('Login Flow (CI Safe)', () => {
     cy.contains('Login').click();
 
     cy.wait('@login');
-    //fff
+
     cy.location('pathname', { timeout: 10000 }).should('eq', '/');
   });
 });
