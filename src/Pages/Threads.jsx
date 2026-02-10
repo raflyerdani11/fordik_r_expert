@@ -24,16 +24,16 @@ const Threads = () => {
           <div className="containerThreads2">
             {data?.map((item) => (
               <ItemThread
-                key={item?.id}
-                id={item?.id}
-                category={item?.category}
-                title={item?.title}
-                desc={item?.body}
-                like={item?.upVotesBy?.length}
-                unlike={item?.downVotesBy?.length}
-                comment={item?.totalComments}
-                time={item?.createdAt}
-                author={item?.authorName}
+                key={item.id}
+                id={item.id}
+                category={item.category}
+                title={item.title}
+                desc={item.body}
+                like={item.upVotesBy?.length}
+                unlike={item.downVotesBy?.length}
+                comment={item.totalComments}
+                time={item.createdAt}
+                author={item.authorName}
               />
             ))}
           </div>
