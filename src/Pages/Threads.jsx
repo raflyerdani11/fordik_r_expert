@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchThreads } from '../features/threads/threadsThunk';
-import ItemThread from '../Components/itemThread';
+import ItemThread from '../Components/ItemThread';
 
 const Threads = () => {
   const dispatch = useDispatch();
